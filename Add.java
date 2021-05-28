@@ -1,11 +1,24 @@
 
- import java.util.*;
+// Program to check for command line arguments
 class Add {
-   public static void main(String args[]){
-Scanner in = new Scanner(System.in);
-System.out.print("Enter your name: ");
- String name = in.nextLine();
-System.out.println("Name is: " + name);
-in.close();
-  }
+public static void main(String[] args)
+{
+// check if length of args array is
+// greater than 0
+if (args.length > 0) {
+System.out.println(
+"The command line arguments are:");
+
+ 
+
+// iterating the args array and printing
+// the command line arguments
+for (String val : args)
+System.out.println(val);
 }
+else
+System.out.println("No command line "
++ "arguments found.");
+}
+}
+
