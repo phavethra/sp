@@ -1,15 +1,11 @@
+
+ import java.util.*;
 class Add {
-
-  public static void main(String[] args) {
-    
-    System.out.println("Enter two numbers");
-    int first = 10;
-    int second = 20;
-    
-    System.out.println(first + " " + second);
-
-    // add two numbers
-    int sum = first + second;
-    System.out.println("The sum is: " + sum);
+   public static void main(String args[]){
+Scanner in = new Scanner(System.in);
+System.out.print("Enter your name: ");
+String name = in.nextLine();
+System.out.println("Name is: " + name);
+in.close();
   }
 }
