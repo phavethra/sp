@@ -2,12 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage ('Compile Stage') {
+        stage ('Deploy') {
 
             steps {
-                withMaven(maven : 'sp') {
-                    sh 'mvn clean compile'
-                }
+                echo'surya'
             }
         }
 
