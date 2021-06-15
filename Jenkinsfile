@@ -4,28 +4,22 @@ pipeline {
     stages {
         stage ('Compile Stage') {
 
-            steps {
-                withMaven(maven : 'M2_HOME') {
-                    sh 'mvn clean compile'
-                }
+           steps {
+               echo 'welcome to solartis'
             }
         }
 
         stage ('Testing Stage') {
 
             steps {
-                withMaven(maven : 'M2_HOME') {
-                    sh 'mvn test'
-                }
+                input('Good Morning Team')
             }
         }
 
 
         stage ('Deployment Stage') {
             steps {
-                withMaven(maven : 'M2_HOME') {
-                    sh 'mvn deploy'
-                }
+                input('signing Off the day')
             }
         }
     }
